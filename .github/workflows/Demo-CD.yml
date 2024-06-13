@@ -15,11 +15,11 @@ permissions:
 
 
 jobs:
-    build:
+    deploy:
         runs-on: ubuntu-latest
         steps:
             - name: check out code
-              run: actions/checkout@v4
+              uses: actions/checkout@v4
             
             - name: Login to Azure
               uses: azure/login@v1
